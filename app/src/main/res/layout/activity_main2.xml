@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <Button
+        android:id="@+id/rotateYButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rotate-Y"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rotateXButton"
+        app:layout_constraintTop_toTopOf="@+id/rotateXButton" />
+
+    <Button
+        android:id="@+id/ShowButton"
+        android:layout_width="160sp"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/HideButton"
+        app:layout_constraintTop_toTopOf="@+id/HideButton" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="317dp"
+        android:layout_height="287dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16"
+        app:srcCompat="@drawable/monkey" />
+
+    <Button
+        android:id="@+id/rotateXButton"
+        android:layout_width="160sp"
+        android:layout_height="wrap_content"
+        android:text="Rotate-X"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rotateYButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <Button
+        android:id="@+id/HideButton"
+        android:layout_width="160sp"
+        android:layout_height="wrap_content"
+        android:text="HIDE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ShowButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rotateXButton"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <Button
+        android:id="@+id/rotateYButton"
+        android:layout_width="160sp"
+        android:layout_height="wrap_content"
+        android:text="Rotate-Y"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rotateXButton"
+        app:layout_constraintTop_toTopOf="@+id/rotateXButton" />
+
+    <Button
+        android:id="@+id/ScaleXButton"
+        android:layout_width="160sp"
+        android:layout_height="wrap_content"
+        android:text="Scale-X"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ScaleYButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HideButton"
+        app:layout_constraintVertical_bias="0.146" />
+
+    <Button
+        android:id="@+id/ScaleYButton"
+        android:layout_width="160sp"
+        android:layout_height="wrap_content"
+        android:text="Scale-X"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ScaleXButton"
+        app:layout_constraintTop_toTopOf="@+id/ScaleXButton" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ScaleXButton"
+        app:layout_constraintVertical_bias="0.235" />
+</androidx.constraintlayout.widget.ConstraintLayout>
